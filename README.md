@@ -1,1 +1,1 @@
-Collaboration project by Francisca Attandoh and Wisdom Opkara
+Collaboration project by Francisca Attandoh and Wisdom Okpara
