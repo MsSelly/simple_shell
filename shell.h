@@ -12,7 +12,7 @@
 #include <fcntl.h>
 #include <errno.h>
 
-/* for reading/writing buffers */
+/* for reading/writeing buffers */
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
@@ -204,6 +204,13 @@ char **get_environ(info_t *);
 int _unsetenv(info_t *, char *);
 int _setenv(info_t *, char *, char *);
 
+/*my function prototype*/
+int open_and_verify_file(char *filename);
+ssize_t get_file_size(int fd);
+char *read_file_contents(int fd, ssize_t fsize);
+void process_file_contents(info_t *info, char *buf, ssize_t fsize);
+
+
 /* this is my_history.c */
 char *get_history_file(info_t *info);
 int write_history(info_t *info);
@@ -233,4 +240,5 @@ int replace_vars(info_t *);
 int replace_string(char **, char *);
 
 #endif
+
 
