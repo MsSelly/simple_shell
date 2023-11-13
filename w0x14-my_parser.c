@@ -1,5 +1,6 @@
 #include "shell.h"
 
+
 /**
  * is_my_cmd - it determines if a file is an executable command.
  *
@@ -47,8 +48,7 @@ char *my_dup_chars(char *pathstr, int start, int stop)
 }
 
 /**
- * find_my_path - this finds the full path of a command in the PATH string.
- *
+ * finding_my_path - this finds the full path of a command in the PATH string.
  * @info: This the info struct.
  * @pathstr: This the PATH string.
  * @cmd: This the command to find.
