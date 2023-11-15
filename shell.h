@@ -174,7 +174,7 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* this is my_builtin.c */
-int _myexit(info_t *);
+int _myexit(info_t *info);
 int _mycd(info_t *);
 int _myhelp(info_t *);
 
