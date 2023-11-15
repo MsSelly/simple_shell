@@ -51,7 +51,7 @@ typedef struct liststr
 } list_t;
 
 /**
- * struct passinfo - this only contains pseudo-arguements to pass into a function,
+ * struct passinfo - this contains pseudo-arguements to pass into a function
  * allowing uniform prototype for function pointer struct
  * @arg: this is a string generated from getline containing arguements
  * @argv:an array of strings generated from arg
